@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build": "if [ ! -d new ]; then mkdir new; fi && cp -r  landing_page/* new/",
-    "test": "npm run build"
+    "test": "npm run build",
     "deploy": "jenkinsfile"
   },
   "repository": {
