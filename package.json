@@ -4,7 +4,7 @@
   "description": "multibranch pipeline",
   "main": "index.html",
   "scripts": {
-    "build": "if [ ! -d new ]; then mkdir new; fi && cp -r figma_task2/* new/",
+    "build": "if [ ! -d new ]; then mkdir new; fi && cp -r  landing_page/* new/",
     "test": "npm run build"
   },
   "repository": {
