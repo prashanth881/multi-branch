@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'npm run deploy --env=prod'
+                sh 'npm run deploy --env=staging'
             }
         }
     }
