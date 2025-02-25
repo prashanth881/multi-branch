@@ -10,7 +10,11 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+                        sh 'npm run deploy'
+                      }
+            steps {
                 script {
+                    
                     if (env.BRANCH_NAME == 'master') {
                         // Ensure the destination directory exists
                         sh 'if [ ! -d /var/www/html/prod ]; then mkdir -p /var/www/html/prod; fi'
