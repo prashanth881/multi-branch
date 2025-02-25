@@ -1,0 +1,23 @@
+{
+  "name": "multi-branch",
+  "version": "1.0.0",
+  "description": "multibranch pipeline",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashanth881/multi-branch.git"
+  },
+  "keywords": [
+    "multibranch",
+    "pipeline"
+  ],
+  "author": "prashanth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prashanth881/multi-branch/issues"
+  },
+  "homepage": "https://github.com/prashanth881/multi-branch#readme"
+}
