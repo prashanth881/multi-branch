@@ -1,0 +1,315 @@
+.container_grid1{
+     width: 70%;
+     transition: width 0.4s;
+     max-width: 100%;
+     margin: 0 auto;
+}
+.container_grid1 #second_title{
+    padding-bottom: 15px;
+    padding-top: 15px
+}
+.three_grid{
+    height:350px;
+     display: grid;
+     width:100%;
+     grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    
+}
+.three_grid .img1{
+    object-fit: cover;
+    grid-column: 1 / span 2;
+    grid-row : 1 /span 2;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    transform: translateY(0);
+
+}
+.three_grid .img1:hover{
+    transform: translateY(-3px);
+}
+.three_grid .img2:hover{
+    transform: translateY(-3px);
+}
+.three_grid .img3:hover{
+    transform: translateY(-3px);
+}
+.three_grid .img4:hover{
+    transform: translateY(-3px);
+}
+
+.three_grid .img1 img{
+    position:relative;
+    width: 100%; 
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: scale 0.2s;
+    scale: 100%;
+    
+}
+.three_grid .img1:hover img{
+    scale: 103%;
+}
+.three_grid .img2:hover img{
+    scale: 103%;
+}
+.three_grid .img3:hover img{
+    scale: 103%;
+}
+.three_grid .img4:hover img{
+    scale: 103%;
+}
+
+.three_grid .img2 img{
+    position:relative;
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+    transition: scale 0.2s;
+    scale: 100%;
+    
+}
+.three_grid .img3 img{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: scale 0.2s;
+    scale: 100%;
+}
+.three_grid .img4 img{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: scale 0.2s;
+    scale: 100%;
+}
+.three_grid .img2{
+    border-radius: 10px;
+    width: 100%;
+    transition: transform 0.4s;
+    transform: translateY(0);
+    
+}
+.three_grid .img3{
+    position: relative;
+    width:100%;
+    border-radius: 10px;
+   transition:transform 0.4s;
+   transform: translateY(0);
+}
+
+.three_grid .img4{
+    position: relative;
+    grid-column: 3 / span 2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition:transform 0.4s;
+    transform: translateY(0);
+}
+.article{
+    background-color: #a0ff65ea;
+    color:white;
+    border: none;
+    outline: none;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+
+#span{
+    color:white;
+    font-size: 20px;
+    margin:10px;
+}
+#comment{
+    color: #a0ff65ea;
+    margin:10px;
+
+}
+.img1 .img_para1{
+    position:absolute;
+    bottom: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+}
+.img2 .img_para2{
+    position:absolute;
+    color: white;
+    bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+.img4 .img_para3{
+    position:absolute;
+    bottom: 10px;
+    font-size: 20px;
+    padding: 10px;
+    color:white;
+}
+.img1 .img_des1{
+    position:absolute;
+    top:0;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+ .img2 .img_des2{
+    position:absolute;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+}
+.img3 .des3{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.des3 #des3{
+    font-size: 50px;
+    margin: 0 auto;
+     color: whitesmoke;
+}
+.des3 .video{
+    background-color: #a0ff65ea;
+    color:white;
+    border: none;
+    outline: none;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+
+
+}
+.img4 .img_des4{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.grid1_bottom{
+    display: flex;
+    margin: 30px 0;
+    padding: 40px;
+    background-color: rgb(231, 227, 227);
+    justify-content: center;
+    gap: 30px;
+
+}
+.signup{
+color: green;
+background-color: white;
+border: none;
+outline: none;
+padding: 20px 55px;
+font-size: 20px;
+border-radius: 30px;
+}
+#miss{
+    padding:20px;
+}
+@media screen and (min-width:700px) and (max-width:1200px){
+    .grid1{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container_grid1{
+        width: 80%;
+    }
+    .three_grid{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .three_grid .img1{
+        grid-area : auto;
+    }
+    .three_grid .img1 .img_para1{
+        font-size: 20px;
+    }
+    .three_grid .img4{
+        grid-area : auto;
+    }
+
+}
+@media screen and (max-width: 700px) {
+    .grid1{
+        width: 100%;
+    }
+    .three_grid{
+        
+        
+        height: 800px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .three_grid .img1{
+        grid-area: auto;
+    }
+    .three_grid .img4{
+        grid-area: auto;
+    }
+    .three_grid .img3{
+        font-size: 20px;
+    }
+    .des3 #des3{
+        font-size: 25px;
+        position: absolute;
+        width: fit-content;
+        left: 45%;
+        top:150%;
+    }
+    .three_grid .img1 .img_para1{
+        font-size: 20px;
+    }
+    .img2 .img_para2{
+        font-size: 20px;
+    }
+    .img4 .img_para3{
+        font-size: 20px;
+    }
+    .article{
+        padding: 5px;
+    }
+    .three_grid .img1 .img_des1{
+        font-size: 20px;
+        margin: 5px;
+        padding: 0;
+    }
+    #span{
+        font-size: 20px;
+    }
+    .grid1_bottom{
+        display: block;
+        text-align:center;
+        
+    }
+}
+@media screen and (max-width:420px){
+    .three_grid .img1 .img_para1{
+        font-size: 15px;
+    }
+
+    
+}
