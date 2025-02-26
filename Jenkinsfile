@@ -19,7 +19,7 @@ pipeline {
                         sh 'rsync -av --delete new/ /var/www/html/prod/'
                     } else if (env.BRANCH_NAME == 'dev') {
                         // Notify the commit message
-                        sh 'echo "Commit message: ${env.GIT_COMMIT_MESSAGE}"'
+                        sh "echo 'Commit message: ${env.GIT_COMMIT_MESSAGE}'"
                     } else if (env.BRANCH_NAME == 'staging') {
                         // Ensure the destination directory exists
                         sh 'if [ ! -d /var/www/html/stage ]; then mkdir -p /var/www/html/stage; fi'
