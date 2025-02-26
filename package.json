@@ -6,7 +6,7 @@
   "scripts": {
     "build": "if [ ! -d new ]; then mkdir new; fi && cp -r  landing_page/* new/",
     "test": "npm run build",
-    "deploy": "jenkinsfile"
+    "deploy": "Jenkinsfile"
   },
   "repository": {
     "type": "git",
